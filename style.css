@@ -1,0 +1,92 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    line-height: 20px;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    width: 80%;
+    border-radius: 10px;
+}
+
+.images{
+    filter: blur(2px);
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+   }
+
+.indicator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container p{
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 90%;
+    line-height: 20px;
+}
+
+.indicator h4{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.indicator h2, h4{
+    margin: 5px;
+}
+.indicator div{
+    margin: 10px;
+}
+
+#title{
+    width: 90%;
+    scale: 0.8;
+}
+
+#highlight{
+    color:hsl(277, 64%, 61%);
+}
+
+@media screen and (min-width:1440px ){
+    body{
+        text-align: left;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .text-container{
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+    .indicator{
+        flex-direction: row;
+    }
+    #title{
+        width: 100%;
+        scale: 1;
+    }
+    .indicator div{
+        margin: 0;
+    }
+}
