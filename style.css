@@ -69,11 +69,11 @@ p{
 @media screen and (min-width:1440px ){
     body{
         text-align: left;
-
     }
     .container{
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 8rem;
     }
     .text-container{
         align-items: flex-start;
@@ -88,5 +88,9 @@ p{
     }
     .indicator div{
         margin: 0;
+    }
+    .images{
+        filter: blur(0.5px);
+        border-radius: 0 10px 10px 0;
     }
 }
