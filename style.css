@@ -5,9 +5,10 @@ body{
     text-align: center;
     font-size: 15px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: auto;
 }
 
 p{
@@ -20,9 +21,15 @@ p{
     border-radius: 10px;
 }
 
-.images{
-    filter: blur(2px);
-    width: 100%;
+.tinted-image{
+    width: auto;
+    height: 220px;
+    background:
+    linear-gradient(rgba(170, 92, 219, 0.45), 
+    rgba(170, 92, 219, 0.45)),
+    url(/images/image-header-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     border-radius: 10px 10px 0 0;
    }
 
@@ -45,12 +52,13 @@ p{
     line-height: 20px;
 }
 
-.indicator h4{
+.indicator h3{
     color: hsla(0, 0%, 100%, 0.6);
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75rem;
 }
 
-.indicator h2, h4{
+.indicator h2, h3{
     margin: 5px;
 }
 .indicator div{
@@ -69,11 +77,12 @@ p{
 @media screen and (min-width:1440px ){
     body{
         text-align: left;
+        height: 100vh;
+        
     }
     .container{
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 8rem;
     }
     .text-container{
         align-items: flex-start;
@@ -89,8 +98,15 @@ p{
     .indicator div{
         margin: 0;
     }
-    .images{
-        filter: blur(0.5px);
-        border-radius: 0 10px 10px 0;
-    }
+    .tinted-image{
+        width: auto;
+        height: 220px;
+        background:
+        linear-gradient(rgba(170, 92, 219, 0.45), 
+        rgba(170, 92, 219, 0.45)),
+        url(/images/image-header-mobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+       }
 }
