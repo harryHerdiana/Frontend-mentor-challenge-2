@@ -27,7 +27,7 @@ p{
     background:
     linear-gradient(rgba(170, 92, 219, 0.45), 
     rgba(170, 92, 219, 0.45)),
-    url(/images/image-header-mobile.jpg);
+    url(images/image-header-mobile.jpg);
     background-repeat: no-repeat;
     border-radius: 10px 10px 0 0;
     background-size: contain;
@@ -106,7 +106,7 @@ p{
         background:
         linear-gradient(rgba(170, 92, 219, 0.45), 
         rgba(170, 92, 219, 0.45)),
-        url(/images/image-header-desktop.jpg);
+        url(images/image-header-desktop.jpg);
         background-size:cover;
         background-repeat: no-repeat;
         border-radius: 0 10px 10px 0;
